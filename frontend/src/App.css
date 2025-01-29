@@ -4,9 +4,18 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: #ffffff;
+  background: #04152d;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+
+  /* Flexbox for centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Full height to center vertically */
+  height: 100vh;
 }
 
 form {
@@ -14,6 +23,10 @@ form {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
+
+  /* Keep the original size of the form */
+  width: 100%; /* Stretches the form to the width of its parent */
+  max-width: 600px; /* Prevents the form from getting too large */
 }
 
 form input {
@@ -32,6 +45,8 @@ form button {
 .contact-list {
   list-style-type: none;
   padding: 0;
+  width: 100%; /* Ensure the list stretches the width of the parent */
+  max-width: 600px; /* Prevents the list from getting too wide */
 }
 
 .contact-item {
@@ -64,3 +79,5 @@ form button {
   color: white;
   padding: 5px 10px;
 }
+
+
